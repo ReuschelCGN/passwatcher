@@ -1,0 +1,12 @@
+version: '2.4'
+services:
+  passwatcher:
+    container_name: passwatcher
+    build: ./passwatcher
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./passwatcher/default.ini:/usr/src/app/default.ini
+    command: crond -f -d 8
+    logging:
+       driver: none
