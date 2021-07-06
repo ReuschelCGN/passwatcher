@@ -12,7 +12,7 @@ It's possible to have Pass Watcher send Webhooks to Discord or Telegram, but it'
 *Sample message with default config options*
 
 ## Usage
-1. Create the `ex_gyms` table using the `ex_gyms.sql` file. Make sure to `USE [manualdb];` before.
+1. Create a new DB and import the `ex_gyms` table using the `ex_gyms.sql` file.
 2. `git clone https://github.com/ccev/passwatcher.git` then copy and rename `default.ini.example` to `default.ini` and fill out everything.
 3. `docker-compose up -d passwatcher`
 4. The script to run in a loop hourly.
